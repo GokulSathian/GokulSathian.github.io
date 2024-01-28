@@ -8220,7 +8220,9 @@ body {
 
 body.dark-mode {
   background-color: var(--primary);
-  color: #ffffff; }
+  background-image: url('images/color.png');
+  color: #ffffff; 
+}
  
 
 
@@ -9481,10 +9483,12 @@ textarea.form-control {
 
 .contact-section .img {
   width: 100%;
-  background-position: top center; }
+  background-position: top center; 
+  background-image: url('images/color.png')
+}
   @media (max-width: 991.98px) {
     .contact-section .img {
-      height: 500px; } }
+      height: 500px; } }   
 
 .contact-section .contact-info p a {
   color: var(--hero); }
