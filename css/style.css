@@ -5,11 +5,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --primary:#fff;
-  --secondary:#000;
-  --other1:#f8f9fa;
-  --hero:#3e64ff;
-  --mouse:#EBEFFF;
+  --primary:#ffecd1;
+  --secondary:#ff7d00;
+  --other:#ffecd1;
+  --hero:#15616d;
+  --big:#15616d;
+  --mouse:#E7EFF0;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -39,10 +40,11 @@
 
   .dark-mode{
     --primary:#000;
-    --secondary:#fff;
+    --secondary:#ffecd1;
     --other:#111314;
     --hero:#82EE82;
     --mouse:#0D180D;
+    --big:#82EE82;
     
   }
 
@@ -5565,7 +5567,7 @@ button.bg-dark:focus {
   border-bottom-left-radius: 0.25rem !important; }
 
 .rounded-lg {
-  border-radius: 0.3rem !important; }
+  border-radius: 0.4rem !important; }
 
 .rounded-circle {
   border-radius: 50% !important; }
@@ -6805,7 +6807,8 @@ button.bg-dark:focus {
   padding-left: 1rem !important; }
 
 .p-4 {
-  padding: 1.5rem !important; }
+  padding: 1.5rem !important;
+ }
 
 .pt-4,
 .py-4 {
@@ -7366,7 +7369,8 @@ button.bg-dark:focus {
   .px-md-4 {
     padding-left: 1.5rem !important; }
   .p-md-5 {
-    padding: 3rem !important; }
+    padding: 2rem !important;
+  border-radius:5%; }
   .pt-md-5,
   .py-md-5 {
     padding-top: 3rem !important; }
@@ -8466,7 +8470,7 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
   .navbar-brand span {
-    color: #fff; }
+    color: var(--secondary); }
 
 .hero-wrap {
   width: 100%;
@@ -8637,7 +8641,7 @@ h1, h2, h3, h4, h5,
     box-shadow: 0 0 0 0 rgba(62, 100, 255, 0); } }
 
 .bg-light {
-  background: #f8f9fa !important; }
+  background: #ffecd1 !important; }
 
 .bg-dark {
   background: #191919 !important; }
@@ -8776,7 +8780,7 @@ h1, h2, h3, h4, h5,
 .page {
   width: 100%;
   margin-bottom: 7em; }
-  .page.four {
+  .page.five {
     margin-bottom: 0; }
   .page .heading {
     font-weight: 800;
@@ -9272,7 +9276,8 @@ textarea.form-control {
     top: 0px;
     left: 0;
     font-size: 7vw;
-    color: rgba(255, 255, 0);
+    opacity: 0.2;
+    color: var(--big);
     z-index: -1;
     font-weight: 900; }
     .heading-section h1.big.big-2 {
